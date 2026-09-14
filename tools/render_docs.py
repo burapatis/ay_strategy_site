@@ -14,6 +14,7 @@ import markdown
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
+SITE_ORIGIN = "https://ayeduplan2.thamdee.com"
 
 CATALOG = [
     {
@@ -219,12 +220,12 @@ def page_html(meta: dict, title: str, body_html: str) -> str:
 <meta property="og:description" content="{esc(blurb)}">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="th_TH">
-<meta property="og:image" content="../assets/og-image.png">
+<meta property="og:image" content="{SITE_ORIGIN}/assets/og-image.png">
 <meta property="og:image:alt" content="ยุทธศาสตร์การศึกษาอยุธยา — แผนที่ไล่กลับไปหาเด็กได้ คือแผนที่ถูกใช้">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="">
+<link rel="canonical" href="{SITE_ORIGIN}/docs/{stem}.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=Trirong:wght@500;600&display=swap" rel="stylesheet">

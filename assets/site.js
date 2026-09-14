@@ -204,20 +204,23 @@ function initAfterMain() {
     update();
   })();
 
-  // ทำที่อยู่เต็มสำหรับ canonical และภาพแชร์ เมื่อเปิดจากที่อยู่สาธารณะ
+  // ที่อยู่สาธารณะสำหรับ canonical ภาพแชร์ และลิงก์โซเชียล
   (function () {
-    var page = location.href.split('#')[0];
+    var ORIGIN = 'https://ayeduplan2.thamdee.com';
+    var path = location.pathname || '/';
+    if (path === '/') path = '/index.html';
+    var publicPage = ORIGIN + path;
     var canon = document.querySelector('link[rel="canonical"]');
-    if (canon && !canon.getAttribute('href')) canon.setAttribute('href', page);
+    if (canon && !canon.getAttribute('href')) canon.setAttribute('href', publicPage);
     var ogImg = document.querySelector('meta[property="og:image"]');
     if (ogImg) {
       var src = ogImg.getAttribute('content') || '';
-      if (src && !/^https?:/i.test(src)) ogImg.setAttribute('content', new URL(src, page).href);
+      if (src && !/^https?:/i.test(src)) ogImg.setAttribute('content', ORIGIN + '/assets/og-image.png');
     }
     if (!document.querySelector('meta[property="og:url"]')) {
       var m = document.createElement('meta');
       m.setAttribute('property', 'og:url');
-      m.setAttribute('content', page);
+      m.setAttribute('content', (canon && canon.getAttribute('href')) || publicPage);
       document.head.appendChild(m);
     }
   })();
