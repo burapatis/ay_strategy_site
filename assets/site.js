@@ -73,6 +73,12 @@
       '<p>พื้นที่เผยแพร่และแลกเปลี่ยนเรียนรู้เรื่องวิธีจัดทำยุทธศาสตร์การพัฒนาการศึกษาระดับจังหวัด เพื่อประโยชน์สาธารณะ</p>' +
       '<p><strong>จัดทำโดย บูรพาทิศ พลอยสุวรรณ์</strong><br>ผู้วิจัยอิสระ<br><a href="mailto:burapatis@gmail.com">burapatis@gmail.com</a></p>' +
       '</div></div>' +
+      '<div class="foot-more">' +
+      '<h3>แหล่งเรียนรู้เพิ่มเติม</h3>' +
+      '<ul>' +
+      '<li><a href="https://ayeduplan1.thamdee.com/" target="_blank" rel="noopener noreferrer">แหล่งเรียนรู้ยุทธศาสตร์การศึกษาอยุธยา</a></li>' +
+      '<li><a href="https://sdg.thamdee.com/" target="_blank" rel="noopener noreferrer">อยุธยาเรียนรู้ · SDG 4</a></li>' +
+      '</ul></div>' +
       '</div>' +
       '<div>' +
       '<h3>วิธีทำงานและข้อเสนอ</h3>' +

@@ -274,7 +274,7 @@ ol.stages li.pivot strong{ color:var(--brick); }
 .links a{ font-weight:500; text-decoration:none; }
 .links a:hover{ text-decoration:underline; }
 .links p{ margin:.3rem 0 0; font-size:.9rem; color:var(--ink-soft); max-width:none; }
-.links code{ font-size:.82rem; color:var(--ink-soft); }
+.links code{ font-size:.82rem; color:var(--ink-soft); white-space:nowrap; }
 
 /* ---------- ดาวน์โหลด ---------- */
 .dl{ list-style:none; padding:0; margin:1.25rem 0 0; }
@@ -321,6 +321,8 @@ ol.stages li.pivot strong{ color:var(--brick); }
 .foot-about{ display:flex; gap:1rem; align-items:flex-start; }
 .foot-mark{ width:3rem; height:3rem; border-radius:50%; object-fit:cover; background:#fff; flex:0 0 auto; }
 .foot-about h3{ margin-top:.2rem; }
+.foot-more{ margin-top:1.5rem; }
+.foot-more h3{ margin-bottom:.35rem; }
 
 .portrait{ margin:0 0 1.15rem; max-width:13.5rem; }
 .portrait img{ width:100%; height:auto; aspect-ratio:1; object-fit:cover; object-position:center 12%; display:block; background:var(--paper-2); }
